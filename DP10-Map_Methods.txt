@@ -1,0 +1,80 @@
+// Map-Dictionary
+void main(){
+  var map1={1:'Sky', 2:'Grass', 3:'Root'};
+  print(map1);
+  
+  print(map1.keys);
+  print(map1.values);
+  
+  print(map1.length); }
+
+
+//Add Map
+void main(){
+  var map2={};
+  map2[1]="First";
+  print(map2);   }
+
+
+// Add All Map
+void main(){
+  var map1={'Color':'White', 'Size':'Small'};
+  map1.addAll({'Brand':'Nike'});
+  print(map1);   }
+  
+  void main(){
+  var map1={1:'Apple', 2:'Banana'};
+  var map2={3:'Carrot',4:'Pear'}..addAll(map1);
+  print(map2);   }
+
+
+// isEmpty Map
+void main(){
+  var map2={};
+  print(map2);
+  
+  if(map2.isEmpty)
+  {
+    print("Empty Map");
+  }
+   else if(map2.isNotEmpty)
+   {
+     print("Unempty Map");  } }
+
+
+// Map - IfAbsent
+void main(){
+  var map3={1:"First", 2:"Second", 3:"third"};
+  print(map3);
+  map3.putIfAbsent(4, ()=>'Forth');
+  print(map3);    }
+
+
+// in-Map List
+void main(){
+  var maps={001:['Ali',18,'A'],002:['Babar', 19, 'B'], 003:['Daud', 18, 'C'] };
+  print(maps); }
+
+
+// Remove Map
+void main(){
+  var maps={001:['Ali',18,'A'],002:['Babar', 19, 'B'], 003:['Daud', 18, 'C'] };
+  print(maps);
+  
+  maps.remove(003);
+  print(maps);  }
+
+
+// RemoveWhere Map
+void main(){
+  var vowels={1:'a', 2:'e', 3:'i', 4:'o', 5:'u'};
+  print(vowels);
+  
+  vowels.remove(1);
+  print(vowels);
+  
+  vowels.removeWhere((key,value)=> value.startsWith('u'));
+  print(vowels);
+  
+  vowels.clear();
+  print(vowels);    }
